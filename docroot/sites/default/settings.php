@@ -755,6 +755,11 @@ $settings['file_scan_ignore_directories'] = [
 $settings['entity_update_batch_size'] = 50;
 
 /**
+ * Environment Specific Customizations based on the Environment Indicator.
+ */
+require DRUPAL_ROOT . "/sites/default/settings/environment.settings.php";
+
+/**
  * Load local development override configuration, if available.
  *
  * Use settings.local.php to override variables on secondary (staging,
